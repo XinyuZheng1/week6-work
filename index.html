@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <title>Utopian Night</title>
+</head>
+
+<body>
+    <div class="i-header">
+        <div class="i-title">Utopia Moon Night in Love</div>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </div>
+
+    <div id="home" class="i-main">
+        <div class="i-main-top">
+        </div>
+        <div class="i-main-card">
+            <div class="i-card">
+                <image id="img1" class="i-card-image" src="images/1.jpg" alt="蓝宝石-紫色" />
+                <div class="i-card-footer">Purple is a symbol of mystery and nobility, and has represented dignity for thousands of years. It also symbolizes the liveliness of youth.</div>
+            </div>
+            <div class="i-card">
+                <image id="img2" class="i-card-image" src="images/2.jpg" alt="钻石" />
+                <div class="i-card-footer">"Elegance" collection of purple sapphire and diamond inlaid rings</div>
+            </div>
+            <div class="i-card">
+                <image id="" img3 class="i-card-image" src="images/3.jpg" alt="钻石" />
+                <div class="i-card-footer">The "late twilight" platinum brooch and purple sapphire are used as transition colors for the feathers, making the color of the jewelry more harmonious and soft</div>
+            </div>
+        </div>
+
+    </div>
+    <div id="about" class="i-about">
+        <div class="i-about-top">
+            Utopian Night
+        </div>
+        <image class="i-about-image" src="images/4.png" alt="" />
+        <p>
+            There are broad sense and narrow sense. Jewelry in the narrow sense only refers to jade products. Jewelry in the broad sense should include jewelry, handicrafts or other treasures made of gold, silver and natural materials (minerals, rocks, organisms,
+            etc.) with certain value, which are collectively referred to as jewelry.
+        </p>
+        <p>
+
+            With the development of society and economy, in addition to natural gemstones and artificial gemstones, the concept of jewelry should be expanded to include gold, silver, jewelry, etc. These items are collectively referred to as the "jewelry industry".
+            The scope of "jewelry" is much larger than the broad concept of "gem". Gemstones in a broad sense refer to those raw materials suitable for cutting or carving into jewelry or handicrafts.
+        </p>
+    </div>
+    <div id="contact" class="i-contact">
+        <p>Phone：414-870-6303</p>
+        <p>Email：xzheng11@student.ohlone.edu</p>
+        <p>Address：Utopian Night, 9999 Your heart, Fremont, CA 99999 United States</p>
+    </div>
+    <div class="i-footer">
+        CopyRight © 2022 Xinyu Zheng Utopian Night
+    </div>
+    <!-- 弹窗 -->
+    <div class="maskweap">
+        <div class="imgshow">
+            <img src="" class="bigimg" />
+        </div>
+    </div>
+    <script>
+        $(function() {
+                $(".i-main-card").on("click", ".i-card", function() {
+                    var imgsrc = $(this).find("img").attr("src");
+                    $(".bigimg").attr("src", imgsrc);
+                    $(".maskweap").show();
+                });
+                $(".maskweap").on("click", function() {
+                    $(".maskweap").hide();
+                });
+            })
+            // 图片放大
+        $(function() {
+            $(".i-main-card").on("click", ".i-card", function() {
+                var imgsrc = $(this).find("img").attr("src");
+                $(".bigimg").attr("src", imgsrc);
+                $(".maskweap").show();
+            });
+            $(".maskweap").on("click", function() {
+                $(".maskweap").hide();
+            });
+        })
+    </script>
+
+</body>
+
+</html>
